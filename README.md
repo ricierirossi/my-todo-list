@@ -23,5 +23,3 @@ STILL ON DEVELOPMENT
 -   Filter all, favorites and completed tasks
 
 # my-todo-list
-
-# my-todo-list

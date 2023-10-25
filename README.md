@@ -7,20 +7,21 @@ STILL ON DEVELOPMENT
 
 ## technologies
 
-. HTML
-. JavaScript
-. CSS
-. Vue 3
-. TailWind CSS
-. Pinia
-. JSON Server
+-HTML
+-JavaScript
+-CSS
+-Vue 3
+-TailWind CSS
+-Pinia
+-JSON Server
 
 ## features
 
-. Add task
-. Favorite task
-. Delete task
-. Filter all, favorites and completed tasks
+-Add task
+-Favorite task
+-Delete task
+-Filter all, favorites and completed tasks
 
 # my-todo-list
+
 # my-todo-list

@@ -20,6 +20,7 @@ STILL ON DEVELOPMENT
 . Add task
 . Favorite task
 . Delete task
-. Complete task
 . Filter all, favorites and completed tasks
+
+# my-todo-list
 # my-todo-list

@@ -1,0 +1,25 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "title": "Fazer compras",
+      "isFav": true
+    },
+    {
+      "id": 2,
+      "title": "Ler livro",
+      "isFav": true
+    },
+    {
+      "id": 3,
+      "title": "Tomar remédio",
+      "isFav": true
+    },
+    {
+      "title": "Fazer bolo",
+      "isFav": false,
+      "isDone": false,
+      "id": 4
+    }
+  ]
+}

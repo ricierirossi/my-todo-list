@@ -3,12 +3,15 @@ import { defineStore } from "pinia";
 export const useTasksStore = defineStore("tasksStore", {
     state: () => ({
         tasks: [],
+        loading: false,
     }),
     actions: {
         async getTasks() {
+            this.loading = true;
             await fetch("http://localhost:3000/tasks")
                 .then((resp) => resp.json())
                 .then((data) => (this.tasks = data));
+            this.loading = false;
         },
         async addTask(task) {
             this.tasks.push(task);
@@ -36,11 +39,9 @@ export const useTasksStore = defineStore("tasksStore", {
                 method: "DELETE",
             });
         },
-        // ! CORRIGIR
         filterAll() {
-            this.tasks = this.tasks;
+            this.getTasks();
         },
-        // ! CORRIGIR
         filterFavs() {
             this.tasks = this.tasks.filter((t) => t.isFav);
         },

@@ -7,9 +7,9 @@ STILL ON DEVELOPMENT
 
 ## technologies
 
--   HTML
+-   HTML 5
 -   JavaScript
--   CSS
+-   CSS 3
 -   Vue 3
 -   TailWind CSS
 -   Pinia
@@ -20,6 +20,4 @@ STILL ON DEVELOPMENT
 -   Add task
 -   Favorite task
 -   Delete task
--   Filter all, favorites and completed tasks
-
-# my-todo-list
+-   Filter all and favorite tasks

@@ -22,17 +22,27 @@ export const useTasksStore = defineStore("tasksStore", {
             const task = this.tasks.find((t) => t.id === id);
             task.isFav = !task.isFav;
 
-            await fetch("http://localhost:3000/tasks/" + id, {
+            await fetch(`http://localhost:3000/tasks/${id}`, {
                 method: "PATCH",
                 body: JSON.stringify({ isFav: task.isFav }),
                 headers: { "Content-Type": "application/json" },
             });
         },
         async deleteTask(id) {
-            const task = this.tasks.find((t) => t.id === id);
-            await fetch("http://localhost:3000/tasks/" + id, {
+            this.tasks = this.tasks.filter((t) => {
+                return t.id != id;
+            });
+            await fetch(`http://localhost:3000/tasks/${id}`, {
                 method: "DELETE",
             });
+        },
+        // ! CORRIGIR
+        filterAll() {
+            this.tasks = this.tasks;
+        },
+        // ! CORRIGIR
+        filterFavs() {
+            this.tasks = this.tasks.filter((t) => t.isFav);
         },
     },
     getters: {
@@ -43,9 +53,6 @@ export const useTasksStore = defineStore("tasksStore", {
             return this.tasks.reduce((count, task) => {
                 return task.isFav ? count + 1 : count;
             }, 0);
-        },
-        filterFavs() {
-            return this.tasks.filter((task) => task.isFav);
         },
     },
 });

@@ -25,6 +25,7 @@ const submitTask = () => {
             title: todo.value,
             isFav: false,
             isDone: false,
+            id: Date.now(),
         });
     }
     todo.value = "";

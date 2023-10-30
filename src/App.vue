@@ -18,10 +18,15 @@
                         favoritas
                     </div>
                     <div class="flex gap-2 self-end">
-                        <TaskButtons label="Todas" @click="filter = 'all'" />
+                        <TaskButtons
+                            label="Todas"
+                            @click="[(filter = 'all'), tasksStore.filterAll()]"
+                        />
                         <TaskButtons
                             label="Favoritas"
-                            @click="filter = 'favs'"
+                            @click="
+                                [(filter = 'favs'), tasksStore.filterFavs()]
+                            "
                         />
                     </div>
                 </div>

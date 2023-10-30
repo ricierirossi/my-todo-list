@@ -4,7 +4,7 @@
             type="text"
             placeholder="Eu preciso..."
             v-model="todo"
-            class="text-center border-solid border-2 rounded text-wine"
+            class="text-center border-solid border-2 rounded text-wine bg-ice"
         />
         <TaskButtons label="Adicionar" @click="submitTask" class="bg-wine" />
     </div>

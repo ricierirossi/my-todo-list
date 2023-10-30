@@ -1,40 +1,22 @@
 {
   "tasks": [
     {
-      "title": "1",
+      "title": "Fazer compras",
+      "isFav": false,
+      "isDone": false,
+      "id": 1698693896857
+    },
+    {
+      "title": "Ler livro",
       "isFav": true,
       "isDone": false,
-      "id": 1698678086902
+      "id": 1698693900486
     },
     {
-      "title": "2",
+      "title": "Tomar remédio",
       "isFav": false,
       "isDone": false,
-      "id": 1698678087882
-    },
-    {
-      "title": "3",
-      "isFav": true,
-      "isDone": false,
-      "id": 1698678088436
-    },
-    {
-      "title": "5",
-      "isFav": false,
-      "isDone": false,
-      "id": 1698678089188
-    },
-    {
-      "title": "4",
-      "isFav": false,
-      "isDone": false,
-      "id": 1698678091970
-    },
-    {
-      "title": "6",
-      "isFav": false,
-      "isDone": false,
-      "id": 1698678095900
+      "id": 1698693915082
     }
   ]
 }

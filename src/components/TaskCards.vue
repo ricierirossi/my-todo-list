@@ -10,7 +10,7 @@
         ></i>
     </div>
 
-    <!-- <div class="flex justify-between">
+    <div class="flex justify-between">
         Correr
 
         <div>
@@ -34,8 +34,8 @@
                 >delete</span
             >
         </div>
-    </div> -->
-    <div v-else class="flex flex-col items-center gap-y-4 mt-5">
+    </div>
+    <!-- <div v-else class="flex flex-col items-center gap-y-4 mt-5">
         <div
             v-for="task in tasksStore.tasks"
             :key="task.id"
@@ -57,7 +57,7 @@
                 >
             </div>
         </div>
-    </div>
+    </div> -->
 </template>
 
 <script setup>

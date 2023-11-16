@@ -2,10 +2,9 @@
 @tailwind components;
 @tailwind utilities;
 
-
 body {
-    background-color: #5C5B5D;
-    height: 100vh;
+    background-color: #5c5b5d;
+    min-height: 100vh;
 }
 
 .favorite-fill {

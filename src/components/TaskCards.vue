@@ -39,7 +39,7 @@
         <div
             v-for="task in tasksStore.tasks"
             :key="task.id"
-            class="flex justify-between items-center w-5/6 bg-ice border-solid border-2 rounded p-1"
+            class="flex justify-between items-center w-5/6 bg-ice border-solid border-2 rounded p-1 sm:max-w-lg"
         >
             {{ task.title }}
 

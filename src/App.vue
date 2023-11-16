@@ -1,7 +1,7 @@
 <template>
     <div class="flex flex-col min-h-screen">
-        <div class="bg-dark text-ice flex flex-col gap-y-4">
-            <div class="flex justify-center gap-x-2 items-end mt-1">
+        <div class="bg-dark text-ice flex flex-col">
+            <div class="flex justify-center gap-x-2 items-end mt-1 mb-4">
                 <span class="material-symbols-outlined text-6xl"> lists </span>
                 <span class="text-7xl">Tarefas</span>
             </div>
@@ -33,14 +33,15 @@
                 <TaskCards :filter="filter" class="flex justify-center" />
             </div>
         </div>
-
-        <footer class="mt-auto text-center w-full py-3">
-            <span>Desenvolvido por </span>
-            <a href="https://github.com/ricierirossi" class="text-pineapple"
-                >ricieri</a
-            >
-        </footer>
-        <TaskForm v-if="bottomForm.value" />
+        <div class="mt-auto sticky bottom-0">
+            <footer class="text-center w-full py-3 bg-lead">
+                <span>Desenvolvido por </span>
+                <a href="https://github.com/ricierirossi" class="text-pineapple"
+                    >ricieri</a
+                >
+            </footer>
+            <TaskForm v-if="bottomForm.value" class="bg-dark pt-5" />
+        </div>
     </div>
 </template>
 
@@ -60,13 +61,13 @@ const bottomForm = ref("");
 
 const handleResize = () => {
     windowWidth.value = window.innerWidth;
-    window.innerWidth <= 420
+    window.innerWidth <= 640
         ? (bottomForm.value = ref(true))
         : (bottomForm.value = ref(false));
 };
 
 onBeforeMount(() => {
-    window.innerWidth <= 420
+    window.innerWidth <= 640
         ? (bottomForm.value = ref(true))
         : (bottomForm.value = ref(false));
 });

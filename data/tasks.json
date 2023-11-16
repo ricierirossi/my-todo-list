@@ -1,22 +1,22 @@
 {
   "tasks": [
     {
-      "title": "Fazer compras",
-      "isFav": false,
-      "isDone": false,
-      "id": 1698693896857
-    },
-    {
       "title": "Ler livro",
-      "isFav": true,
+      "isFav": false,
       "isDone": false,
       "id": 1698693900486
     },
     {
       "title": "Tomar remédio",
-      "isFav": false,
+      "isFav": true,
       "isDone": false,
       "id": 1698693915082
+    },
+    {
+      "title": "Correr",
+      "isFav": true,
+      "isDone": false,
+      "id": 1700144567551
     }
   ]
 }

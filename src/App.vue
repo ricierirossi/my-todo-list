@@ -1,9 +1,9 @@
 <template>
-    <div class="h-screen">
-        <div class="flex flex-col gap-y-10 bg-dark text-ice py-5">
-            <div class="flex justify-center items-baseline gap-x-10">
-                <span class="material-symbols-outlined text-130"> lists </span>
-                <span class="text-180 text-ice sm:text-red-600">Tarefas</span>
+    <div class="">
+        <div class="bg-dark text-ice flex flex-col gap-y-4">
+            <div class="flex justify-center gap-x-2 items-end mt-1">
+                <span class="material-symbols-outlined text-6xl"> lists </span>
+                <span class="text-7xl">Tarefas</span>
             </div>
             <TaskForm />
         </div>

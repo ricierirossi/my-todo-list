@@ -9,7 +9,7 @@
         <TaskButtons
             label="Adicionar"
             @click="submitTask"
-            class="bg-pineapple w-44"
+            class="bg-wine w-44"
         />
     </div>
 </template>

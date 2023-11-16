@@ -1,7 +1,7 @@
 # my-todo-list
 
 This application is a simple To Do list. It's purpose consists in provide knowledge about JS framework,
-state management, storage use, CSS libraries, server integration.
+state management, storage use, CSS libraries and server integration.
 
 STILL ON DEVELOPMENT
 

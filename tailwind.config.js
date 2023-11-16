@@ -13,10 +13,6 @@ module.exports = {
                 ice: "#FCEAFF",
                 lead: "#5C5B5D",
             },
-            fontSize: {
-                130: "130px",
-                180: "180px",
-            },
         },
     },
     plugins: [],

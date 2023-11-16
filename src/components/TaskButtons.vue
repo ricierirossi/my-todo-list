@@ -1,6 +1,6 @@
 <template>
     <div
-        class="w-auto border-solid border-2 rounded p-1 bg-guava text-center hover:cursor-pointer"
+        class="border-solid border-2 rounded p-1 bg-guava text-center hover:cursor-pointer"
     >
         {{ label }}
     </div>

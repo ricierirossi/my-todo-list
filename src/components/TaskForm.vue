@@ -1,10 +1,12 @@
 <template>
-    <div class="flex flex-col gap-y-4 pb-4 items-center">
+    <div
+        class="flex flex-col gap-y-4 pb-4 items-center md:flex-row md:justify-center md:gap-x-4"
+    >
         <input
             type="text"
             placeholder="Eu preciso..."
             v-model="todo"
-            class="border-solid border-2 rounded text-wine bg-ice w-72 text-center"
+            class="border-solid border-2 rounded text-wine bg-ice w-72 text-center md:h-9"
         />
         <TaskButtons
             label="Adicionar"

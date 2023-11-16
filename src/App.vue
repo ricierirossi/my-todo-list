@@ -5,7 +5,7 @@
                 <span class="material-symbols-outlined text-130"> lists </span>
                 <span class="text-180">Tarefas</span>
             </div>
-            <TaskForm class="flex justify-center" />
+            <TaskForm class="flex justify-center text-center text-5xl mb-5" />
         </div>
         <div>
             <div>

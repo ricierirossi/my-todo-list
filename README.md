@@ -13,7 +13,7 @@ STILL ON DEVELOPMENT
 -   Vue 3
 -   TailWind CSS
 -   Pinia
--   JSON Server
+-   Firebase
 
 ## features
 

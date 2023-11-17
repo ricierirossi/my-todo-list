@@ -18,7 +18,7 @@
         >
             {{ task.title }}
 
-            <div class="flex">
+            <div class="flex gap-x-2">
                 <span
                     class="material-symbols-outlined favorite hover:cursor-pointer text-red-800"
                     :class="{ 'favorite-fill': task.isFav }"

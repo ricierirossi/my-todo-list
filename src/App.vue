@@ -9,7 +9,9 @@
         </div>
         <div>
             <div>
-                <div class="flex justify-center items-center gap-x-5 mt-5">
+                <div
+                    class="flex flex-col gap-y-3 items-center mt-5 smaller:flex-row smaller: justify-center smaller:gap-x-5"
+                >
                     <div v-if="filter == 'all'">
                         Você possui {{ tasksStore.totalTasks }} tarefa(s)
                     </div>

@@ -14,6 +14,9 @@ module.exports = {
                 lead: "#5C5B5D",
             },
         },
+        screens: {
+            smaller: "382px",
+        },
     },
     plugins: [],
 };

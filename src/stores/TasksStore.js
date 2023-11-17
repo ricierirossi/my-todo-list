@@ -6,6 +6,7 @@ export const useTasksStore = defineStore("tasksStore", {
     state: () => ({
         tasks: [],
         loading: false,
+        section: "all",
     }),
     actions: {
         async getTasks() {
@@ -15,21 +16,28 @@ export const useTasksStore = defineStore("tasksStore", {
                 .then((resp) => resp.json())
 
                 .then((data) => {
-                    this.tasks = Object.keys(data).map((key) => data[key]);
+                    if (!!data) {
+                        this.tasks = Object.keys(data).map((key) => data[key]);
 
-                    this.tasks.forEach(
-                        (task, index) => (task.id = Object.keys(data)[index])
-                    );
+                        this.tasks.forEach(
+                            (task, index) =>
+                                (task.id = Object.keys(data)[index])
+                        );
+                    }
                 });
             this.loading = false;
         },
         async addTask(task) {
             this.tasks.push(task);
+
             await fetch(`${url}.json`, {
                 method: "POST",
                 body: JSON.stringify(task),
                 headers: { "Content-Type": "application/json" },
             });
+            if (this.section === "favs") {
+                this.tasks = this.tasks.filter((t) => t.isFav);
+            }
             await fetch(`${url}.json`)
                 .then((resp) => resp.json())
                 .then((data) => {
@@ -56,9 +64,11 @@ export const useTasksStore = defineStore("tasksStore", {
             });
         },
         filterAll() {
+            this.section = "all";
             this.getTasks();
         },
         filterFavs() {
+            this.section = "favs";
             this.tasks = this.tasks.filter((t) => t.isFav);
         },
     },

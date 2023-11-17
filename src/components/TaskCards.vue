@@ -10,32 +10,6 @@
         ></i>
     </div>
 
-    <!-- Mocked values  -->
-    <!-- <div class="flex justify-between">
-        Correr
-
-        <div>
-            <span class="material-symbols-outlined favoritehover:cursor-pointer"
-                >favorite</span
-            >
-            <span class="material-symbols-outlined delete hover:cursor-pointer"
-                >delete</span
-            >
-        </div>
-    </div>
-
-    <div class="flex justify-between">
-        Fazer compra
-
-        <div>
-            <span class="material-symbols-outlined favoritehover:cursor-pointer"
-                >favorite</span
-            >
-            <span class="material-symbols-outlined delete hover:cursor-pointer"
-                >delete</span
-            >
-        </div>
-    </div> -->
     <div v-else class="flex flex-col items-center gap-y-4 mt-5">
         <div
             v-for="task in tasksStore.tasks"

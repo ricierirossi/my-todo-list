@@ -16,8 +16,7 @@
             :key="task.id"
             class="flex justify-between items-center w-5/6 bg-ice border-solid border-2 rounded p-1 sm:max-w-lg"
         >
-            {{ task.title }}
-
+            <div class="overflow-auto">{{ task.title }}</div>
             <div class="flex gap-x-2">
                 <span
                     class="material-symbols-outlined favorite hover:cursor-pointer text-red-800"

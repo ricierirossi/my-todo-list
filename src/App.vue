@@ -10,7 +10,7 @@
         <div>
             <div>
                 <div
-                    class="flex flex-col gap-y-3 items-center mt-5 smaller:flex-row smaller:justify-center smaller:gap-x-5"
+                    class="flex flex-col gap-y-3 items-center mt-5 overflow-hidden sm:flex-row smaller:justify-center smaller:gap-x-5"
                 >
                     <div v-if="filter == 'all'">
                         Você possui {{ tasksStore.totalTasks }} tarefa(s)

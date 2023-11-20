@@ -13,12 +13,9 @@ module.exports = {
                 ice: "#FCEAFF",
                 lead: "#5C5B5D",
             },
-        },
-        screens: {
-            smaller: "382px",
-            sm: "640px",
-            md: "768px",
-            lg: "1024px	",
+            screens: {
+                smaller: "382px",
+            },
         },
     },
     plugins: [],

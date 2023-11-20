@@ -36,12 +36,6 @@
             </div>
         </div>
         <div class="mt-auto sticky bottom-0">
-            <footer class="text-center w-full py-3 bg-lead">
-                <span>Desenvolvido por </span>
-                <a href="https://github.com/ricierirossi" class="text-pineapple"
-                    >ricieri</a
-                >
-            </footer>
             <TaskForm v-if="bottomForm.value" class="bg-dark pt-5" />
         </div>
     </div>
